@@ -24,7 +24,7 @@ const API_SITES = {
     dyttzy: {
         api: 'http://caiji.dyttzyapi.com/api.php/provide/vod',
         name: '电影天堂资源',
-        detail: 'http://caiji.dyttzyapi.com', 
+        detail: 'http://caiji.dyttzyapi.com',
     },
     ruyi: {
         api: 'https://cj.rycjapi.com/api.php/provide/vod',
@@ -45,12 +45,20 @@ const API_SITES = {
     ffzy: {
         api: 'http://ffzy5.tv/api.php/provide/vod',
         name: '非凡影视',
-        detail: 'http://ffzy5.tv', 
+        detail: 'http://ffzy5.tv',
+    },
+    ffzy_new: {
+        api: 'http://cj.ffzyapi.com/api.php/provide/vod/',
+        name: '非凡影视（新接口）',
     },
     heimuer: {
         api: 'https://json.heimuer.xyz/api.php/provide/vod',
         name: '黑木耳',
-        detail: 'https://heimuer.tv', 
+        detail: 'https://heimuer.tv',
+    },
+    heimuer_tv: {
+        api: 'https://www.heimuer.tv/api.php/provide/vod',
+        name: '黑木耳（备用接口）',
     },
     zy360: {
         api: 'https://360zy.com/api.php/provide/vod',
@@ -63,15 +71,23 @@ const API_SITES = {
     wolong: {
         api: 'https://wolongzyw.com/api.php/provide/vod',
         name: '卧龙资源',
-    }, 
+    },
+    wolong_collect: {
+        api: 'https://collect.wolongzyw.com/api.php/provide/vod/',
+        name: '卧龙资源（采集接口）',
+    },
     hwba: {
         api: 'https://cjhwba.com/api.php/provide/vod',
         name: '华为吧资源',
     },
+    hw8: {
+        api: 'https://hw8.live/api.php/provide/vod/',
+        name: '华为吧资源（新接口）',
+    },
     jisu: {
         api: 'https://jszyapi.com/api.php/provide/vod',
         name: '极速资源',
-        detail: 'https://jszyapi.com', 
+        detail: 'https://jszyapi.com',
     },
     dbzy: {
         api: 'https://dbzy.com/api.php/provide/vod',
@@ -85,34 +101,109 @@ const API_SITES = {
         api: 'https://www.mdzyapi.com/api.php/provide/vod',
         name: '魔都资源',
     },
+    modu_collect: {
+        api: 'https://caiji.moduapi.cc/api.php/provide/vod/',
+        name: '魔都资源（采集接口）',
+    },
     zuid: {
         api: 'https://api.zuidapi.com/api.php/provide/vod',
-        name: '最大资源'
+        name: '最大资源',
+    },
+    zuid_new: {
+        api: 'http://zuidazy.me/api.php/provide/vod/',
+        name: '最大资源（备用接口）',
     },
     yinghua: {
         api: 'https://m3u8.apiyhzy.com/api.php/provide/vod',
-        name: '樱花资源'
+        name: '樱花资源',
     },
     baidu: {
         api: 'https://api.apibdzy.com/api.php/provide/vod',
-        name: '百度云资源'
+        name: '百度云资源',
     },
     wujin: {
         api: 'https://api.wujinapi.me/api.php/provide/vod',
-        name: '无尽资源'
+        name: '无尽资源',
+    },
+    wujin_new: {
+        api: 'https://api.wujinapi.com/api.php/provide/vod/',
+        name: '无尽资源（备用接口）',
     },
     wwzy: {
         api: 'https://wwzy.tv/api.php/provide/vod',
-        name: '旺旺短剧'
+        name: '旺旺短剧',
     },
     ikun: {
         api: 'https://ikunzyapi.com/api.php/provide/vod',
-        name: 'iKun资源'
+        name: 'iKun资源',
     },
-    testSource: {
-        api: 'https://www.example.com/api.php/provide/vod',
-        name: '空内容测试源',
-        adult: true
+    hongniu: {
+        api: 'https://www.hongniuzy2.com/api.php/provide/vod/',
+        name: '红牛资源',
+    },
+    liangzi: {
+        api: 'https://cj.lziapi.com/api.php/provide/vod/',
+        name: '量子资源',
+    },
+    openfilm: {
+        api: 'http://vod-demo.onrender.com/pubdovod.php',
+        name: '开放电影',
+    },
+    zyku1080: {
+        api: 'http://api.1080zyku.com/inc/api.php/provide/vod',
+        name: '优质资源库',
+    },
+    kan39: {
+        api: 'http://39kan.com/api.php/provide/vod',
+        name: '39影视',
+    },
+    tiantang: {
+        api: 'http://vipmv.cc/api.php/provide/vod',
+        name: '天堂资源',
+    },
+    lehootv: {
+        api: 'http://lehootv.com/api.php/provide/vod',
+        name: '乐活影视',
+    },
+    tangrenjie: {
+        api: 'http://tangrenjie.tv/api.php/provide/vod',
+        name: '唐人街',
+    },
+    kuapi: {
+        api: 'https://api.kuapi.cc/api.php/provide/vod',
+        name: '酷点资源',
+    },
+    slapibf: {
+        api: 'http://slapibf.com/api.php/provide/vod',
+        name: '森林资源',
+    },
+    ykapi: {
+        api: 'http://api.ykapi.net/api.php/provide/vod',
+        name: '影库资源网',
+    },
+    kczy: {
+        api: 'https://caiji.kczyapi.com/api.php/provide/vod/from/kcm3u8/',
+        name: '快车资源',
+    },
+    ttzy: {
+        api: 'http://apittzy.com/api.php/provide/vod',
+        name: '探探资源',
+    },
+    sdzy: {
+        api: 'https://sdzyapi.com/api.php/provide/vod/',
+        name: '闪电资源',
+    },
+    jinying: {
+        api: 'http://jyzyapi.com/provide/vod/from/jinyingm3u8',
+        name: '金鹰资源',
+    },
+    guangsu: {
+        api: 'http://api.guangsuapi.com/api.php/provide/vod/from/gsm3u8',
+        name: '光速资源',
+    },
+    aosika: {
+        api: 'http://aosikazy.com/api.php/provide/vod',
+        name: '奥斯卡资源',
     },
     // 下面是一些成人内容的API源，默认隐藏，使用本项目浏览黄色内容违背项目初衷
     // 互联网上传播的色情内容将人彻底客体化、工具化，是性别解放和人类平等道路上的巨大障碍。
